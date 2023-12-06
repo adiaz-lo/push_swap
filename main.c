@@ -1,5 +1,10 @@
-int	main()
+int	main(int argc, char **argv)
 {
-	push_swap;
+	if (argc < 2)
+	{
+		ft_printf("Not enough arguments");
+		exit(1);
+	}
+	push_swap(argv);
 	return (0);
 }
