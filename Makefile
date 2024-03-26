@@ -12,19 +12,23 @@
 
 NAME = push_swap
 
-DEPS = Libft/libft.a
+DEPS = libft/libft.a
 
 CC = clang
 
 CCFLAGS = -Wall -Werror -Wextra
 
-INCLUDE = push_swap.h
+INCLUDE = includes/push_swap.h
 
 ARFLAGS = -rcs
 
 RM = rm -f
 
-SRCS = ft_printf.c ft_print_c.c ft_print_s.c ft_print_p.c ft_print_i.c ft_print_u.c ft_print_hexl.c ft_print_hexu.c
+SRC_PATH = src/
+OBJ_PATH = obj/
+
+SRCS = push_swap.c \
+
 
 OBJS = $(SRCS:.c=.o)
 

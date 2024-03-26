@@ -12,7 +12,17 @@
 
 #include "push_swap.h"
 
-void	push_swap(char **argv)
+void	main(int argc, char **argv)
 {
-	 
+	t_stack	*lst_a;
+	t_stack	*lst_b;
+
+	lst_a = NULL;
+	lst_b = NULL;
+	if(argc > 1 && argv[1])
+	{
+		if(check_sign_numbers_spaces_args(argc, argv))
+		else
+			ft_error(1);
+	}
 }

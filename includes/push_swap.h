@@ -10,13 +10,19 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#ifndef PUSH_SWAP_H
+# define PUSH_SWAP_H
 
-# include <stdio.h>
-# include <stdlib.h>
-# include <unistd.h>
+# include "libft/libft.h"
+
+typedef struct t_stack
+{
+	int				num;
+	int				id;
+	struct t_stack	*next;
+}					t_stack;
 
 //		MANDATORY
 
 void	push_swap(char **argv);
+int		ft
