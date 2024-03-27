@@ -21,7 +21,17 @@ void	main(int argc, char **argv)
 	lst_b = NULL;
 	if(argc > 1 && argv[1])
 	{
-		if(check_sign_numbers_spaces_args(argc, argv))
+		if (check_sign_numbers_spaces_args(argc, argv) != 0)
+			ft_error(1);
+		else
+		{
+			lst_a = convert_args_to_int_add_stack(argc, argv);
+			if (lst_a = NULL)
+				ft_error(1);
+		}
+		if (are_nums_ordered(lst_a) != 0)
+			return (free_stack(&lst_a), 0);
+		if ()
 		else
 			ft_error(1);
 	}
