@@ -31,8 +31,11 @@ void	main(int argc, char **argv)
 		}
 		if (are_nums_ordered(lst_a) != 0)
 			return (free_stack(&lst_a), 0);
-		if ()
+		if (check_repeated_numbers(lst_a) == 0 && check_numbers_in_order(lst_a) == 0)
+			ft_choose_algorithm(lst_a);
 		else
 			ft_error(1);
 	}
+	ft_stk_free(&lst_a);
+	ft_stk_free(&lst_b);
 }

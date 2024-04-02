@@ -12,7 +12,6 @@
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
-
 # include "libft/libft.h"
 
 typedef struct t_stack
@@ -24,5 +23,16 @@ typedef struct t_stack
 
 //		MANDATORY
 
-void	push_swap(char **argv);
-int		ft
+int		ft_choose_algorithm(t_stack **lst_a, t_stack **lst_b);
+
+//SIMPLE SORTING
+int		ft_sort_three_numbers(t_stack **lst_a, t_stack **lst_b);
+int		ft_sort_four_numbers(t_stack **lst_a, t_stack **lst_b);
+int		ft_sort_four_numbers_bis(t_stack **lst_a, t_stack **lst_b, int min);
+int		ft_sort_five_numbers(t_stack **lst_a, t_stack **lst_b);
+int		ft_sort_five_numbers_bis(t_stack **lst_a, t_stack **lst_b, int min);
+
+//
+
+
+#endif
